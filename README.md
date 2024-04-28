@@ -1,2 +1,2 @@
-# CAPTCHA-Deep-Learning-Model
+# CAPTCHA-Recognition-Model
 5 character CAPTHCA decoder
