@@ -1,36 +1,40 @@
 # CAPTCHA-Recognition-Model
+<ins>Summary</ins>
 
-CAPTCHA Recognition Models Explanation:
-
-The attached Python codes are for CAPTCHA recognition modes that use either CNN or RESNET to decode images of CAPTCHAs. Below is a simplified breakdown of their functionalities:
-
-<ins>CNN Model</ins>
+The attached Python codes are for CAPTCHA recognition modes that use either CNN or ResNet to decode images of CAPTCHAs. Below is a simplified breakdown of their functionalities:
 
 <strong>Data Preparation:</strong>
 
 Load CAPTCHA images from a specified directory.
 Preprocess the images to a standardized format, normalize pixel values, and perform one-hot encoding on the text labels.
 
-<strong>Model Training:</strong>
+<strong>Model Architecture:</strong>
 
-Split the dataset into training, validation, and test sets.
-Train a Convolutional Neural Network (CNN) model designed to recognize and classify the characters in CAPTCHA images.
+A CNN or ResNet model is built with layers designed for feature extraction and classification.
+The model includes convolutional layers, max pooling, a flattening step, dense layers, and dropout for regularization.
+The output layer is structured to predict multiple characters, each with a set of possible classes.
+
+
+<strong>Training Process:</strong>
+
+The dataset is split into training, validation, and test sets.The model is compiled with the Adam optimizer and categorical cross-entropy loss function. Training is conducted over 100 epochs with validation data to monitor performance.
 
 <strong>Evaluation:</strong>
 
-Evaluate the trained model on a test set and print metrics such as accuracy.
-Create visualizations to compare the performance of the model across different epochs.
-Confusion Matrices:
-Generate confusion matrices for the model, illustrating its performance on classifying each character in the CAPTCHAs.
+The trained model is evaluated on a test set and prints metrics such as accuracy.
 
 <strong>Model Saving:</strong>
 
-Save the trained CNN model to a file for future use in CAPTCHA decoding tasks.
+Save the trained CNN or ResNet model to a file for future use in CAPTCHA decoding tasks.
 
-<strong>Interacting with the Code: For future users:</strong>
+<strong>Interacting with the code for future users:</strong>
 
-Adjust the preprocessing steps according to the specific CAPTCHA image characteristics.
-Ensure the dataset path and file names match your setup.
-Run the code step by step or in its entirety to train and evaluate the model.
-Use the saved CNN model for making predictions on new CAPTCHA images.
+•	Adjust the preprocessing steps according to the specific CAPTCHA image characteristics.
+
+•	Ensure the dataset path and file names match your setup.
+
+•	Run the code step by step or in its entirety to train and evaluate the model.
+
+•	Use the saved CNN or ResNet model for making predictions on new CAPTCHA images.
+
 This explanation aligns with the CAPTCHA recognition code and provides a clear guide for users to understand and interact with the model. If you need any more modifications or have other questions, feel free to ask!
