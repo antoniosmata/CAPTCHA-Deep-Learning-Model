@@ -37,4 +37,3 @@ Save the trained CNN or ResNet model to a file for future use in CAPTCHA decodin
 
 •	Use the saved CNN or ResNet model for making predictions on new CAPTCHA images.
 
-If you need any more modifications or have other questions, feel free to ask!
